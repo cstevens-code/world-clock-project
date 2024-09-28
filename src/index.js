@@ -43,3 +43,23 @@ setInterval(function () {
     `HH:mm:ss`
   )} <small>${tokyoTime.format("A")}</small>`;
 }, 1000);
+
+//select
+function updateCity(event) {
+  let timezone = event.target.value;
+  let name = timezone.replace("_", " ").split("/")[1];
+  let time = moment().tz(timezone);
+  let citiesElement = document.querySelector("#cities");
+  citiesElement.innerHTML = `<div>
+          <div>
+            <h2>${name}</h2>
+            <div class="date">${time.format("MMMM Do YYYY")}</div>
+          </div>
+          <div class="time">${time.format("HH:mm:ss")}<small>${time.format(
+    "A"
+  )}</small></div>
+        </div>`;
+}
+
+let citiesSelectElement = document.querySelector("#city");
+citiesSelectElement.addEventListener("change", updateCity);

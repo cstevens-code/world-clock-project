@@ -17,41 +17,42 @@
   <body>
     <div class="container">
       <h1>World Clock</h1>
-      <select>
+      <select id="city">
         <option value="">Select a city...</option>
-        <option value="London">London 🇬🇧</option>
-        <option value="Los Angeles">Los Angeles 🇺🇸</option>
-        <option value="Berlin">Berlin 🇩🇪</option>
-        <option value="Tokyo">Tokyo 🇯🇵</option>
+        <option value="Europe/London">London</option>
+        <option value="America/Los_Angeles">Los Angeles</option>
+        <option value="Europe/Berlin">Berlin</option>
+        <option value="Asia/Tokyo">Tokyo</option>
       </select>
-
-      <div class="city" id="london">
-        <div>
-          <h2>London 🇬🇧</h2>
-          <div class="date"></div>
+      <div id="cities">
+        <div class="city" id="london">
+          <div>
+            <h2>London 🇬🇧</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"><small></small></div>
         </div>
-        <div class="time"><small></small></div>
-      </div>
-      <div class="city" id="los-angeles">
-        <div>
-          <h2>Los Angeles 🇺🇸</h2>
-          <div class="date"></div>
+        <div class="city" id="los-angeles">
+          <div>
+            <h2>Los Angeles 🇺🇸</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"><small></small></div>
         </div>
-        <div class="time"><small></small></div>
-      </div>
-      <div class="city" id="berlin">
-        <div>
-          <h2>Berlin 🇩🇪</h2>
-          <div class="date"></div>
+        <div class="city" id="berlin">
+          <div>
+            <h2>Berlin 🇩🇪</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"><small></small></div>
         </div>
-        <div class="time"><small></small></div>
-      </div>
-      <div class="city" id="tokyo">
-        <div>
-          <h2>Tokyo 🇯🇵</h2>
-          <div class="date"></div>
+        <div class="city" id="tokyo">
+          <div>
+            <h2>Tokyo 🇯🇵</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"><small>AM</small></div>
         </div>
-        <div class="time"><small>AM</small></div>
       </div>
     </div>
     <footer>
