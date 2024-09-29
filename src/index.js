@@ -50,7 +50,7 @@ function updateCity(event) {
   let name = timezone.replace("_", " ").split("/")[1];
   let time = moment().tz(timezone);
   let citiesElement = document.querySelector("#cities");
-  citiesElement.innerHTML = `<div>
+  citiesElement.innerHTML = `<div class="city">
           <div>
             <h2>${name}</h2>
             <div class="date">${time.format("MMMM Do YYYY")}</div>
